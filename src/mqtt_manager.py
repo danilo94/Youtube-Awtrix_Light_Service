@@ -18,6 +18,4 @@ class mqtt_client:
         self.client = mqtt.Client()
         self.client.username_pw_set(USERNAME,PASSWORD)
         self.client.connect(HOST)
-        self.client.subscribe(NEXT_BUTTON)
-        self.client.subscribe(PREVIOUS_BUTTON)
         self.client.loop_start()
